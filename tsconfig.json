@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "component/*": ["src/component/*"],
+      "lib/*": ["src/lib/*"],
+      "media/*": ["src/media/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

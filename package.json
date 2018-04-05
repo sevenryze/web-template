@@ -1,0 +1,74 @@
+{
+  "name": "@sevenryze/web-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The PWA Web App of DeepDigEst(China) Inc.",
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack-dev-server --config webpack.dev.js --hot",
+    "dev-build": "webpack --config webpack.dev.js",
+    "prod-build": "webpack --config webpack.prod.js"
+  },
+  "dependencies": {
+    "@types/react": "^16.1.0",
+    "@types/react-dom": "^16.0.4",
+    "history": "^4.7.2",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "styled-components": "^3.2.5",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "@sevenryze/server": "^1.1.0",
+    "babel-loader": "^7.1.4",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.11.1",
+    "react-hot-loader": "^4.0.1",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "keywords": [
+    "DeepDigEst Inc.",
+    "Web"
+  ],
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://www.deepdigest.com",
+  "bugs": {
+    "url": "https://github.com/sevenryze",
+    "email": "sevenryze@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "sevenryze",
+    "email": "sevenryze@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevenryze"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "testMatch": [
+      "**/test/**/!(*.d).ts?(x)"
+    ]
+  }
+}
